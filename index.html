@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local SEO Audit Report - Burjo Milenial Tembalang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c 0%, #f97316 50%, #fb923c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(234, 88, 12, 0.15);
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .progress-bar {
+            transition: width 1.5s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="bar-chart-3" class="w-6 h-6 text-primary-600"></i>
+                    <span class="font-display font-semibold text-lg">SEO Audit</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8 text-sm text-gray-600">
+                    <a href="#summary" class="hover:text-primary-600 transition-colors">Ringkasan</a>
+                    <a href="#analysis" class="hover:text-primary-600 transition-colors">Analisis</a>
+                    <a href="#strategy" class="hover:text-primary-600 transition-colors">Strategi</a>
+                    <a href="#budget" class="hover:text-primary-600 transition-colors">Budget</a>
+                    <a href="#results" class="hover:text-primary-600 transition-colors">Hasil</a>
+                </div>
+                <a href="#contact" class="bg-primary-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary-700 transition-colors">
+                    Mulai Project
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+                <span>Report Generated: 13 Feb 2026</span>
+            </div>
+            <h1 class="font-display text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Local SEO Audit
+                <span class="gradient-text block">Report</span>
+            </h1>
+            <p class="text-2xl text-gray-500 font-light mb-4">Burjo Milenial Tembalang</p>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                Analisis mendalam dan strategi optimasi digital untuk meningkatkan 
+                visibilitas, rating, dan penjualan bisnis Anda di dunia digital.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#summary" class="bg-primary-600 text-white px-8 py-4 rounded-full font-medium hover:bg-primary-700 transition-all flex items-center justify-center gap-2">
+                    <span>Lihat Analisis</span>
+                    <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+                <a href="#strategy" class="bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-full font-medium hover:border-primary-300 hover:text-primary-600 transition-all">
+                    Strategi Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary Cards -->
+    <section id="summary" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl font-bold mb-4">Executive Summary</h2>
+                <p class="text-gray-500">Ringkasan kondisi Local SEO Burjo Milenial saat ini</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Rating -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-yellow-50 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="star" class="w-6 h-6 text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-1">Google Rating</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-display text-3xl font-bold">4.2</span>
+                        <span class="text-gray-400">/5</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">984 ulasan</p>
+                    <div class="mt-4 flex items-center gap-1 text-green-600 text-sm">
+                        <i data-lucide="trending-up" class="w-4 h-4"></i>
+                        <span>Target: 4.7+</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Ranking -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="trophy" class="w-6 h-6 text-blue-500"></i>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-1">Ranking Lokal</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-display text-3xl font-bold">#4</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">di Tembalang</p>
+                    <div class="mt-4 flex items-center gap-1 text-green-600 text-sm">
+                        <i data-lucide="arrow-up" class="w-4 h-4"></i>
+                        <span>Target: #1-2</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Website -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="globe" class="w-6 h-6 text-red-500"></i>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-1">Website</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-display text-xl font-bold text-red-500">Tidak Ada</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Critical Issue</p>
+                    <div class="mt-4 flex items-center gap-1 text-primary-600 text-sm">
+                        <i data-lucide="alert-circle" class="w-4 h-4"></i>
+                        <span>Priority Fix</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Potential -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 card-hover border-primary-200">
+                    <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="rocket" class="w-6 h-6 text-primary-600"></i>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-1">Potensi</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-display text-3xl font-bold gradient-text">Tinggi</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Bisa capai #1-2</p>
+                    <div class="mt-4 flex items-center gap-1 text-primary-600 text-sm">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i>
+                        <span>24 Jam + Rooftop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current State Analysis -->
+    <section id="analysis" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl font-bold mb-4">Current State Analysis</h2>
+                <p class="text-gray-500">Analisis kondisi Google Business Profile dan kompetisi</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- Strengths -->
+                <div class="bg-green-50 rounded-2xl p-8">
+                    <h3 class="font-display text-xl font-semibold mb-6 flex items-center gap-2 text-green-800">
+                        <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                        Kekuatan
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-green-900">Sudah terdaftar di Google Maps</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-green-900">984 ulasan (bukti popularitas)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-green-900">Buka 24 jam (keunggulan kompetitif)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-green-900">Fasilitas lengkap: Parkir, Rooftop, AC, WiFi</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-green-900">Plus Code tersedia (WCVH+9G)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Weaknesses -->
+                <div class="bg-orange-50 rounded-2xl p-8">
+                    <h3 class="font-display text-xl font-semibold mb-6 flex items-center gap-2 text-orange-800">
+                        <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+                        Kelemahan
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="x" class="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-orange-900">Rating 4.2 di bawah kompetitor (rata-rata 4.7)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="x" class="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-orange-900">105 ulasan 1-bintang (10.7%) - terlalu tinggi</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="x" class="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-orange-900">Tidak ada website resmi</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="x" class="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-orange-900">Kategori "Restoran" terlalu umum</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="x" class="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-orange-900">Foto kurang menarik (hanya 4 foto)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Competitor Comparison -->
+            <div class="bg-gray-50 rounded-2xl p-8">
+                <h3 class="font-display text-xl font-semibold mb-6">Analisis Kompetitor</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-gray-200">
+                                <th class="text-left py-4 px-4 font-medium text-gray-500">Nama Burjo</th>
+                                <th class="text-center py-4 px-4 font-medium text-gray-500">Rating</th>
+                                <th class="text-center py-4 px-4 font-medium text-gray-500">Ulasan</th>
+                                <th class="text-left py-4 px-4 font-medium text-gray-500">Keunggulan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-4 font-medium">Burjo Borneo</td>
+                                <td class="py-4 px-4 text-center">
+                                    <span class="inline-flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                        4.9
+                                    </span>
+                                </td>
+                                <td class="py-4 px-4 text-center text-gray-600">542</td>
+                                <td class="py-4 px-4 text-gray-600">Pelayanan terbaik</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-4 font-medium">Burjo Bintang Pagi</td>
+                                <td class="py-4 px-4 text-center">
+                                    <span class="inline-flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                        4.9
+                                    </span>
+                                </td>
+                                <td class="py-4 px-4 text-center text-gray-600">450</td>
+                                <td class="py-4 px-4 text-gray-600">Kualitas makanan</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-4 font-medium">Burjo KANE</td>
+                                <td class="py-4 px-4 text-center">
+                                    <span class="inline-flex items-center gap-1 bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                        4.4
+                                    </span>
+                                </td>
+                                <td class="py-4 px-4 text-center text-gray-600">2,503</td>
+                                <td class="py-4 px-4 text-gray-600">Marketing kuat</td>
+                            </tr>
+                            <tr class="bg-primary-50">
+                                <td class="py-4 px-4 font-semibold text-primary-900">Burjo Milenial</td>
+                                <td class="py-4 px-4 text-center">
+                                    <span class="inline-flex items-center gap-1 bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
+                                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                        4.2
+                                    </span>
+                                </td>
+                                <td class="py-4 px-4 text-center text-gray-600">984</td>
+                                <td class="py-4 px-4 font-medium text-primary-700">Rooftop + 24 Jam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="py-20 px-6 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl font-bold mb-4">Problem Statement</h2>
+                <p class="text-gray-400">3 masalah kritis yang perlu segera dipecahkan</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Problem 1 -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                    <div class="w-14 h-14 bg-red-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="globe" class="w-7 h-7 text-red-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-3">Tidak Ada Website</h3>
+                    <p class="text-gray-400 mb-4">Kehilangan 40-60% pelanggan potensial yang mencari informasi online sebelum berkunjung.</p>
+                    <div class="flex items-center gap-2 text-red-400 text-sm">
+                        <i data-lucide="alert-circle" class="w-4 h-4"></i>
+                        <span>Critical Priority</span>
+                    </div>
+                </div>
+
+                <!-- Problem 2 -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                    <div class="w-14 h-14 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="star-off" class="w-7 h-7 text-orange-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-3">Rating di Bawah Kompetitor</h3>
+                    <p class="text-gray-400 mb-4">Rating 4.2 kalah dari Burjo Borneo (4.9) dan Bintang Pagi (4.9). Pelanggan lebih memilih rating tinggi.</p>
+                    <div class="flex items-center gap-2 text-orange-400 text-sm">
+                        <i data-lucide="trending-down" class="w-4 h-4"></i>
+                        <span>High Priority</span>
+                    </div>
+                </div>
+
+                <!-- Problem 3 -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                    <div class="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="smartphone" class="w-7 h-7 text-yellow-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-3">Marketing Digital Lemah</h3>
+                    <p class="text-gray-400 mb-4">Instagram dan TikTok kurang optimal. Kalah saing dari burjo lain yang lebih aktif di sosial media.</p>
+                    <div class="flex items-center gap-2 text-yellow-400 text-sm">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                        <span>Medium Priority</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Roadmap -->
+    <section id="strategy" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl font-bold mb-4">Strategic Roadmap</h2>
+                <p class="text-gray-500">Rencana strategis 6 bulan untuk mendominasi pasar lokal</p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gray-200"></div>
+
+                <!-- Phase 1 -->
+                <div class="relative mb-12 md:mb-0">
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                                <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium mb-3">Bulan 1-2</span>
+                                <h3 class="font-display text-xl font-semibold mb-2">Fase 1: Foundation</h3>
+                                <p class="text-gray-500 mb-4">Membangun fondasi digital yang kuat</p>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center gap-2 md:justify-end">
+                                        <span>Pembuatan website</span>
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                    </li>
+                                    <li class="flex items-center gap-2 md:justify-end">
+                                        <span>Optimasi Google Business Profile</span>
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                    </li>
+                                    <li class="flex items-center gap-2 md:justify-end">
+                                        <span>Sistem QR Code Review</span>
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                    </li>
+                                    <li class="flex items-center gap-2 md:justify-end">
+                                        <span>Upload 25+ foto berkualitas</span>
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow"></div>
+                        <div class="md:w-1/2 md:pl-12"></div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="relative mb-12 md:mb-0">
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12"></div>
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow"></div>
+                        <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0">
+                            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                                <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium mb-3">Bulan 2-4</span>
+                                <h3 class="font-display text-xl font-semibold mb-2">Fase 2: Growth</h3>
+                                <p class="text-gray-500 mb-4">Meningkatkan visibilitas dan engagement</p>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center gap-2">
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                        <span>Revitalisasi Instagram & TikTok</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                        <span>Daftar 15+ direktori lokal</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                        <span>Kolaborasi dengan influencer</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                        <span>Program review management</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="relative">
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                                <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-3">Bulan 4-6</span>
+                                <h3 class="font-display text-xl font-semibold mb-2">Fase 3: Domination</h3>
+                                <p class="text-gray-500 mb-4">Mempertahankan posisi #1 dan scaling</p>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center gap-2 md:justify-end">
+                                        <span>Advanced SEO & content marketing</span>
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                    </li>
+                                    <li class="flex items-center gap-2 md:justify-end">
+                                        <span>Loyalty program digital</span>
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                    </li>
+                                    <li class="flex items-center gap-2 md:justify-end">
+                                        <span>Community building & events</span>
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                    </li>
+                                    <li class="flex items-center gap-2 md:justify-end">
+                                        <span>Google Ads (opsional)</span>
+                                        <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow"></div>
+                        <div class="md:w-1/2 md:pl-12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Expected Results -->
+    <section id="results" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl font-bold mb-4">Expected Results</h2>
+                <p class="text-gray-500">Proyeksi hasil dan return on investment dalam 6 bulan</p>
+            </div>
+
+            <!-- Metrics Comparison -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 mb-12">
+                <h3 class="font-display text-xl font-semibold mb-8">Performance Metrics</h3>
+                
+                <div class="space-y-8">
+                    <!-- Rating -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-600">Google Rating</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm text-gray-400">4.2</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-400"></i>
+                                <span class="text-sm font-semibold text-primary-600">4.7</span>
+                            </div>
+                        </div>
+                        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-yellow-400 to-primary-500 rounded-full progress-bar" style="width: 94%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-600">Total Ulasan</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm text-gray-400">984</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-400"></i>
+                                <span class="text-sm font-semibold text-primary-600">1,500+</span>
+                            </div>
+                        </div>
+                        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Ranking -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-600">Ranking Lokal</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm text-gray-400">#4</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-400"></i>
+                                <span class="text-sm font-semibold text-primary-600">#1-2</span>
+                            </div>
+                        </div>
+                        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Followers -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-600">Social Media Growth</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm text-gray-400">372</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-400"></i>
+                                <span class="text-sm font-semibold text-primary-600">3,000+</span>
+                            </div>
+                        </div>
+                        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-purple-400 to-purple-600 rounded-full progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rating Improvement Strategy -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 mb-12">
+                <h3 class="font-display text-xl font-semibold mb-2">Rating Improvement Strategy</h3>
+                <p class="text-gray-500 mb-8">Cara meningkatkan rating Google dari <strong>4.2</strong> ke <strong class="text-primary-600">4.8</strong></p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <!-- Current State -->
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <h4 class="font-semibold mb-4 flex items-center gap-2">
+                            <i data-lucide="pie-chart" class="w-5 h-5 text-gray-500"></i>
+                            Current Review Distribution
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <span class="w-16 text-sm text-gray-600">5 ⭐</span>
+                                <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-green-500 rounded-full" style="width: 65%"></div>
+                                </div>
+                                <span class="text-sm text-gray-500">638</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-16 text-sm text-gray-600">4 ⭐</span>
+                                <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-green-400 rounded-full" style="width: 16%"></div>
+                                </div>
+                                <span class="text-sm text-gray-500">158</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-16 text-sm text-gray-600">3 ⭐</span>
+                                <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 6%"></div>
+                                </div>
+                                <span class="text-sm text-gray-500">56</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-16 text-sm text-gray-600">2 ⭐</span>
+                                <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-orange-400 rounded-full" style="width: 3%"></div>
+                                </div>
+                                <span class="text-sm text-gray-500">27</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-16 text-sm text-gray-600">1 ⭐</span>
+                                <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-red-500 rounded-full" style="width: 11%"></div>
+                                </div>
+                                <span class="text-sm text-red-600 font-medium">105</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-red-50 rounded-lg">
+                            <p class="text-sm text-red-700">
+                                <strong>Problem:</strong> 105 ulasan 1-bintang (10.7%) menarik rating ke bawah
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Strategy -->
+                    <div class="bg-primary-50 rounded-xl p-6">
+                        <h4 class="font-semibold mb-4 flex items-center gap-2">
+                            <i data-lucide="target" class="w-5 h-5 text-primary-600"></i>
+                            Target: 4.8 Rating
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <span class="w-16 text-sm text-gray-600">5 ⭐</span>
+                                <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-green-500 rounded-full" style="width: 82%"></div>
+                                </div>
+                                <span class="text-sm text-green-600 font-medium">+500</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-16 text-sm text-gray-600">4 ⭐</span>
+                                <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-green-400 rounded-full" style="width: 12%"></div>
+                                </div>
+                                <span class="text-sm text-gray-500">+100</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-16 text-sm text-gray-600">3-1 ⭐</span>
+                                <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gray-400 rounded-full" style="width: 6%"></div>
+                                </div>
+                                <span class="text-sm text-gray-500">Minimal</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-green-50 rounded-lg">
+                            <p class="text-sm text-green-700">
+                                <strong>Solution:</strong> Butuh <strong>~500 review 5-bintang baru</strong> untuk offset review negatif
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Plan -->
+                <h4 class="font-semibold mb-6">Action Plan: 4.2 → 4.8</h4>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-blue-600 font-bold">1</span>
+                        </div>
+                        <h5 class="font-semibold mb-2">QR Code Review System</h5>
+                        <p class="text-sm text-gray-600 mb-3">Tempel QR code di setiap meja yang mengarah ke Google Review</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Cetak 50+ stiker QR code
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Staff ajak pelanggan review
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Target: 5-10 review/hari
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-green-600 font-bold">2</span>
+                        </div>
+                        <h5 class="font-semibold mb-2">Review & Reward Program</h5>
+                        <p class="text-sm text-gray-600 mb-3">Berikan reward untuk pelanggan yang memberi review</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Bintang 4 = Gratis Es Teh
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Bintang 5 = Gratis Nasi Goreng Mini
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Screenshot sebagai bukti
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-orange-600 font-bold">3</span>
+                        </div>
+                        <h5 class="font-semibold mb-2">Negative Review Management</h5>
+                        <p class="text-sm text-gray-600 mb-3">Tangani review negatif dengan cepat dan profesional</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Respon dalam 24 jam
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Minta maaf & solusi
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-3 h-3 text-green-500"></i>
+                                Follow-up privat
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Advanced Solutions for Faster Results -->
+                <div class="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-100">
+                    <h4 class="font-semibold mb-4 flex items-center gap-2 text-indigo-900">
+                        <i data-lucide="zap" class="w-5 h-5 text-indigo-600"></i>
+                        Advanced Solutions (Faster Results)
+                    </h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-5 rounded-lg border border-indigo-100">
+                            <h5 class="font-semibold mb-2 text-indigo-900">Bulk Review Campaign</h5>
+                            <p class="text-sm text-gray-600 mb-3">Target grup besar dalam waktu singkat</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Event mahasiswa (40-100 orang)
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Komunitas motor/mobil (20-50 orang)
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Gathering kantor (20-30 orang)
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Promo: "Review bareng, diskon 20%"
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-lg border border-indigo-100">
+                            <h5 class="font-semibold mb-2 text-indigo-900">Influencer Review Blitz</h5>
+                            <p class="text-sm text-gray-600 mb-3">10-20 micro-influencer review bersamaan</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Food blogger Semarang (5k-20k followers)
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Sebar di grup WA/FB komunitas
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Collab dengan UKM kampus
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    1 minggu = 50-100 review baru
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-lg border border-indigo-100">
+                            <h5 class="font-semibold mb-2 text-indigo-900">VIP Customer Program</h5>
+                            <p class="text-sm text-gray-600 mb-3">Fokus pada pelanggan loyal</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Identifikasi pelanggan regular (20-50 orang)
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    WA blast dengan link review
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    VIP card: Free 1 menu setelah review
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Personal approach = konversi tinggi
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-lg border border-indigo-100">
+                            <h5 class="font-semibold mb-2 text-indigo-900">Fix Operational Issues</h5>
+                            <p class="text-sm text-gray-600 mb-3">Hentikan review negatif dari sumbernya</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Training staff pelayanan
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Konsistensi kualitas makanan
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Tertibkan masalah parkir
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-3 h-3 text-indigo-500"></i>
+                                    Jam ramai = tambah staff
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="mt-8 p-6 bg-gray-50 rounded-xl">
+                    <h4 class="font-semibold mb-4">Timeline Pencapaian 4.8 Rating</h4>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 bg-white p-4 rounded-lg border border-gray-200">
+                            <p class="text-sm text-gray-500 mb-1">Month 1-2</p>
+                            <p class="font-semibold text-lg">4.2 → 4.4</p>
+                            <p class="text-sm text-gray-600">+100 review 5⭐</p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gray-400 hidden md:block"></i>
+                            <i data-lucide="arrow-down" class="w-5 h-5 text-gray-400 md:hidden"></i>
+                        </div>
+                        <div class="flex-1 bg-white p-4 rounded-lg border border-gray-200">
+                            <p class="text-sm text-gray-500 mb-1">Month 3-4</p>
+                            <p class="font-semibold text-lg">4.4 → 4.6</p>
+                            <p class="text-sm text-gray-600">+200 review 5⭐</p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gray-400 hidden md:block"></i>
+                            <i data-lucide="arrow-down" class="w-5 h-5 text-gray-400 md:hidden"></i>
+                        </div>
+                        <div class="flex-1 bg-primary-50 p-4 rounded-lg border border-primary-200">
+                            <p class="text-sm text-primary-600 mb-1">Month 5-6</p>
+                            <p class="font-semibold text-lg text-primary-700">4.6 → 4.8 ⭐</p>
+                            <p class="text-sm text-primary-600">+200 review 5⭐</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculation: Reviews Needed -->
+                <div class="mt-8 p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200">
+                    <h4 class="font-semibold mb-4 flex items-center gap-2 text-green-900">
+                        <i data-lucide="calculator" class="w-5 h-5 text-green-600"></i>
+                        Kalkulasi: Berapa Review yang Dibutuhkan?
+                    </h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-5 rounded-lg">
+                            <h5 class="font-medium mb-3 text-gray-700">Current State</h5>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Total Reviews:</span>
+                                    <span class="font-medium">984</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Current Rating:</span>
+                                    <span class="font-medium">4.2 ⭐</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Total Stars:</span>
+                                    <span class="font-medium">4,133 ⭐</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-5 rounded-lg border-2 border-green-300">
+                            <h5 class="font-medium mb-3 text-green-800">Target: 4.8 Rating</h5>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Target Total Stars:</span>
+                                    <span class="font-medium text-green-700">~7,200 ⭐</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Stars Needed:</span>
+                                    <span class="font-bold text-green-700">+3,067 ⭐</span>
+                                </li>
+                                <li class="flex justify-between border-t pt-2 mt-2">
+                                    <span class="text-gray-800 font-medium">5⭐ Reviews Needed:</span>
+                                    <span class="font-bold text-2xl text-green-600">~615</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 p-4 bg-white rounded-lg">
+                        <p class="text-sm text-gray-700">
+                            <strong>Rumus:</strong> Untuk naik dari 4.2 ke 4.8, dibutuhkan sekitar <strong class="text-green-700">615 review 5-bintang</strong> 
+                            dalam waktu <strong>3-4 bulan</strong> dengan target <strong>5-10 review/hari</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Key Metrics -->
+                <div class="mt-6 grid md:grid-cols-4 gap-4">
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <p class="text-2xl font-bold text-green-600">615</p>
+                        <p class="text-sm text-gray-600">Review 5⭐ Needed</p>
+                    </div>
+                    <div class="text-center p-4 bg-blue-50 rounded-lg">
+                        <p class="text-2xl font-bold text-blue-600">5-10</p>
+                        <p class="text-sm text-gray-600">Review Target/Hari</p>
+                    </div>
+                    <div class="text-center p-4 bg-orange-50 rounded-lg">
+                        <p class="text-2xl font-bold text-orange-600">24h</p>
+                        <p class="text-sm text-gray-600">Response Time Max</p>
+                    </div>
+                    <div class="text-center p-4 bg-purple-50 rounded-lg">
+                        <p class="text-2xl font-bold text-purple-600">3-4</p>
+                        <p class="text-sm text-gray-600">Bulan Target</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROI Card -->
+            <div class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-8 text-white">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-semibold mb-4">Return on Investment</h3>
+                        <p class="text-primary-100 mb-6">
+                            Dengan investasi Rp 23 juta selama 6 bulan, proyeksi peningkatan 
+                            revenue mencapai <strong class="text-white">Rp 90 juta</strong>.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-white/20 rounded-xl px-6 py-4">
+                                <p class="text-3xl font-bold">291%</p>
+                                <p class="text-sm text-primary-200">ROI dalam 6 bulan</p>
+                            </div>
+                            <div class="bg-white/20 rounded-xl px-6 py-4">
+                                <p class="text-3xl font-bold">20%</p>
+                                <p class="text-sm text-primary-200">Revenue Increase</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-6">
+                        <h4 class="font-semibold mb-4">Revenue Projection</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary-200">Current Monthly</span>
+                                <span class="font-semibold">Rp 75jt</span>
+                            </div>
+                            <div class="h-px bg-white/20"></div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary-200">After 6 Months</span>
+                                <span class="font-semibold text-2xl">Rp 90jt</span>
+                            </div>
+                            <div class="h-px bg-white/20"></div>
+                            <div class="flex justify-between items-center text-green-300">
+                                <span>Additional Revenue</span>
+                                <span class="font-semibold">+Rp 15jt/bulan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps / Contact -->
+    <section id="contact" class="py-20 px-6 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="font-display text-3xl font-bold mb-6">Ready to Start?</h2>
+                    <p class="text-gray-400 mb-8">
+                        Mari wujudkan Burjo Milenial sebagai ikon kuliner Tembalang. 
+                        Hubungi kami untuk jadwal presentasi detail dan kick-off meeting.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">WhatsApp</p>
+                                <p class="font-medium">[Nomor Anda]</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Email</p>
+                                <p class="font-medium">[Email Anda]</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Meeting</p>
+                                <p class="font-medium">On-site di Burjo Milenial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+                    <h3 class="font-display text-xl font-semibold mb-6">Preparation Checklist</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="square" class="w-5 h-5 text-gray-500"></i>
+                            <span class="text-gray-300">Foto tempat & makanan (HD)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="square" class="w-5 h-5 text-gray-500"></i>
+                            <span class="text-gray-300">Logo (atau buat baru)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="square" class="w-5 h-5 text-gray-500"></i>
+                            <span class="text-gray-300">Daftar menu lengkap + harga</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="square" class="w-5 h-5 text-gray-500"></i>
+                            <span class="text-gray-300">Akses Google Business Profile</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="square" class="w-5 h-5 text-gray-500"></i>
+                            <span class="text-gray-300">Kontak WhatsApp resmi</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="square" class="w-5 h-5 text-gray-500"></i>
+                            <span class="text-gray-300">Budget approval</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-gray-950 text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>Dokumen ini bersifat rahasia dan hanya untuk internal Burjo Milenial</p>
+            <p>Generated: 13 February 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Animate progress bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.style.width;
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.progress-bar').forEach(bar => {
+            observer.observe(bar);
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
